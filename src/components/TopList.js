@@ -1,13 +1,14 @@
-import React from 'react';
+import React, {Component} from 'react';
+import TopDetail from './TopDetail.js';
 
-const TopList = (props) => {
-  return(
-    <div>
-      <h2>
-        top 20 list
-      </h2>
-    </div>
-  )
+class TopList extends Component{
+  render() {
+    return(
+      <div>
+        <TopDetail/>
+      </div>
+    )
+  }
 }
 
 export default TopList;
